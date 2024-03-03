@@ -1,1 +1,3 @@
 module MinimumRemoveMakeValidParentheses
+
+go 1.22
