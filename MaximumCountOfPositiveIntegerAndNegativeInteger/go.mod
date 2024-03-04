@@ -1,0 +1,3 @@
+module MaximumCountOfPositiveIntegerAndNegativeInteger
+
+go 1.22
