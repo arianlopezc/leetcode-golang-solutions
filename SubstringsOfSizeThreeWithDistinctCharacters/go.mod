@@ -1,0 +1,3 @@
+module SubstringsOfSizeThreeWithDistinctCharacters
+
+go 1.22
