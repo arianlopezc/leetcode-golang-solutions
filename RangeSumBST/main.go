@@ -13,12 +13,15 @@ func rangeSumBST(root *TreeNode, low int, high int) int {
 	}
 	if root.Val >= low && root.Val <= high {
 		thisValue = root.Val
-	}
-	if low < root.Val {
 		thisValue += rangeSumBST(root.Left, low, high)
-	}
-	if high > root.Val {
 		thisValue += rangeSumBST(root.Right, low, high)
+	} else {
+		if low < root.Val {
+			thisValue += rangeSumBST(root.Left, low, high)
+		}
+		if high > root.Val {
+			thisValue += rangeSumBST(root.Right, low, high)
+		}
 	}
 	return thisValue
 }
