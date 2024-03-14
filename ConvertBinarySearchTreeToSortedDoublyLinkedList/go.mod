@@ -1,0 +1,3 @@
+module ConvertBinarySearchTreeToSortedDoublyLinkedList
+
+go 1.22
